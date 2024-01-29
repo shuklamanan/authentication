@@ -1,9 +1,11 @@
+import 'package:authentication/pages/forgotpw.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+  final VoidCallback showregisterpage;
+  const LoginPage({super.key, required this.showregisterpage});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -106,6 +108,30 @@ class _LoginPageState extends State<LoginPage> {
                   height: 10,
                 ),
                 Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 25.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) {
+                            return forgotpasswordpage();
+                          }));
+                        },
+                        child: Text(
+                          'Forgot Password?',
+                          style: TextStyle(
+                              color: Colors.blue, fontWeight: FontWeight.bold),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: GestureDetector(
                     onTap: signin,
@@ -130,17 +156,20 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(
                   height: 10,
                 ),
-                const Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       'Not a Member?',
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
-                    Text(
-                      ' Register now',
-                      style: TextStyle(
-                          color: Colors.blue, fontWeight: FontWeight.bold),
+                    GestureDetector(
+                      onTap: widget.showregisterpage,
+                      child: const Text(
+                        ' Register now',
+                        style: TextStyle(
+                            color: Colors.blue, fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ],
                 )

@@ -44,37 +44,37 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyD2EQy9lc-IX41kCEpZLtscRvMhBYfgI4g',
-    appId: '1:527685097434:web:f565c31481cee1f51392e3',
-    messagingSenderId: '527685097434',
-    projectId: 'auth-7b480',
-    authDomain: 'auth-7b480.firebaseapp.com',
-    storageBucket: 'auth-7b480.appspot.com',
+    apiKey: 'AIzaSyAicpGvd74LYPiYScSccDVxgqqOCAE3SOM',
+    appId: '1:1071697669526:web:505f805eae714a6b1281b7',
+    messagingSenderId: '1071697669526',
+    projectId: 'auth02-acb3c',
+    authDomain: 'auth02-acb3c.firebaseapp.com',
+    storageBucket: 'auth02-acb3c.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCLS2UE6CqG0xrrxQOt6mcAQVd-DO6ROII',
-    appId: '1:527685097434:android:f09497218481b7151392e3',
-    messagingSenderId: '527685097434',
-    projectId: 'auth-7b480',
-    storageBucket: 'auth-7b480.appspot.com',
+    apiKey: 'AIzaSyBkcMnflJTTrc1RC_Iz7sgSUrBV1U4mGqk',
+    appId: '1:1071697669526:android:6e512223a97f8e2d1281b7',
+    messagingSenderId: '1071697669526',
+    projectId: 'auth02-acb3c',
+    storageBucket: 'auth02-acb3c.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCE5jkAfURqCIQRL98OiIOC2r-GfEISLPM',
-    appId: '1:527685097434:ios:e9396f9d00069b0f1392e3',
-    messagingSenderId: '527685097434',
-    projectId: 'auth-7b480',
-    storageBucket: 'auth-7b480.appspot.com',
+    apiKey: 'AIzaSyBjCNasB-mCncNWzN3J7FUwhz34ZMzkfqc',
+    appId: '1:1071697669526:ios:2157a9fc9fd380e51281b7',
+    messagingSenderId: '1071697669526',
+    projectId: 'auth02-acb3c',
+    storageBucket: 'auth02-acb3c.appspot.com',
     iosBundleId: 'com.example.authentication',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCE5jkAfURqCIQRL98OiIOC2r-GfEISLPM',
-    appId: '1:527685097434:ios:4a8ed5d3894a37471392e3',
-    messagingSenderId: '527685097434',
-    projectId: 'auth-7b480',
-    storageBucket: 'auth-7b480.appspot.com',
+    apiKey: 'AIzaSyBjCNasB-mCncNWzN3J7FUwhz34ZMzkfqc',
+    appId: '1:1071697669526:ios:c6d6381449e596151281b7',
+    messagingSenderId: '1071697669526',
+    projectId: 'auth02-acb3c',
+    storageBucket: 'auth02-acb3c.appspot.com',
     iosBundleId: 'com.example.authentication.RunnerTests',
   );
 }
